@@ -1,0 +1,12 @@
+{
+  "name": "igis-cesium-es6",
+  "version": "0.0.7",
+  "description": "IGis For Cesium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "igis",
+  "license": "ISC"
+}

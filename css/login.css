@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.login-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/loginbg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.login-top{
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    width: 100%;
+    /*background-color: #00F7DE;*/
+    background-image: url("../images/login-top.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.login-top h1{
+    color: #ffffff;
+    font-size: 45px;
+    letter-spacing:10px
+}
+.login-top h1 sup{
+    letter-spacing:2px
+
+}
+.login-content{
+    position: relative;
+    margin: 20px 100px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    /*width: 100%;*/
+    /*background-color: #1E9FFF;*/
+}
+.content-left{
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/longin-content-left.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.content-right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/login-content-right.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.login-footer{
+    text-align: center;
+    line-height: 50px;
+    color: #fff9ec;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/login-bottom.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#cesiumContainer{
+    /* width: 50%; */
+    /* background-color: #ccc; */
+    position: relative;
+    left: -30%;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

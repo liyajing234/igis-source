@@ -1,0 +1,257 @@
+
+/*region 组件样式  new Dom 创建dom样式*/
+.ig-home{
+    right: 1%;
+    /*bottom: 30%;*/
+    /*position:absolute;*/
+    z-index: 1;
+    /*position:relative*/
+}
+.ig-changelayer{
+    right: 1%;
+    /*bottom: 25%;*/
+    /*position:absolute;*/
+    z-index: 1;
+}
+.ig-2D{
+    right: 1%;
+    /*bottom: 20%;*/
+    /*position:absolute;*/
+    z-index: 1;
+}
+.ig-3D{
+    right: 1%;
+    /*bottom: 15%;*/
+    /*position:absolute;*/
+    z-index: 1;
+}
+.ig-latlon{
+    /*right: 70%;*/
+    /*position:absolute;*/
+    left: 25%;
+    bottom: 5%;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+    position:absolute;
+}
+.ig-lon{
+    /*left: 500px;*/
+    margin-left: 0;
+}
+.ig-lat{
+    margin-left: 1%;
+}
+.ig-alt{
+    margin-left: 1%;
+}
+.ig-elevation{
+    margin-left: 1%;
+}
+.ig-component{
+    right: 1%;
+    bottom: 10%;
+    position:absolute;
+    z-index: 1;
+    float: bottom;
+    /*background-color: red;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+}
+/*版权信息样式*/
+.ig-copyright{
+    position:absolute;
+    left: 0;
+    bottom:5%;
+    width:10%;
+    z-index: 1;
+}
+
+/*遮罩层样式 */
+.ig-masklayer{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 999;
+}
+/*loading图标样式 */
+.ig-loading{
+    position:absolute;
+    z-index: 1000;
+    top:calc(50% - 35px);
+    left: calc(50% - 25px);
+}
+/*endregion*/
+
+/*region Dom.createChartBox Echart默认样式*/
+.ig-echarts{
+    position:absolute;
+    z-index: 1000;
+    width: 50px;
+    height: 100px;
+    background-color: rgba(0,0,0,0);
+    /*z-index: 99999;*/
+}
+/*endregion */
+
+/* region Dom.createMapPopup 弹窗样式 */
+/*弹窗样式 */
+.ig-popup{
+    z-index: 100000;
+    width:250px;
+    height: 150px;
+    position:absolute;
+    background-color: #ffffff;
+    border:1px solid #333333;
+}
+
+.ig-popup-inner{
+    background-color:#FFF;
+
+    width:10px;
+
+    height:10px;
+
+    border:1px solid #000;
+
+    /* 旋转小方块并调整位置形成尖角 */
+
+    position:absolute;
+
+    left:120px;
+
+    top:146px;
+
+    transform:rotate(45deg);
+
+    border-left:0px;
+
+    border-top:0px;
+    z-index: 11;
+}
+/*弹窗头部 */
+.ig-popup-header{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    /*border:0.5px solid #333333;*/
+
+}
+
+.ig-popup-header-title{
+    width: 70%;
+    height: 30px;
+    position: relative;
+    line-height:30px;
+    text-align:left;
+    font-weight:bold;
+    padding: 5px;
+}
+.ig-popup-header-close{
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align:right;
+    font-weight:bolder;
+    line-height: 30px;
+    /*margin-right: 10px;*/
+    cursor:pointer;
+    background: url("../igisimgs/close.png") no-repeat scroll right center transparent;
+;
+}
+/*弹窗头部end*/
+/*弹窗中间部分*/
+
+
+.ig-popup-body{
+    width: 100%;
+    height:75px;
+    border:0.5px 0 0.5px 0solid #333333;
+    text-align: left;
+    /*padding: 5px;*/
+}
+/*弹窗中间部分end*/
+/*弹窗底部*/
+.ig-popup-footer{
+    width:100%;
+    height:45px;
+    /*border:0.1px solid #333333;*/
+    position: relative;
+    text-align: left;
+}
+
+.ig-popup-footer-div{
+    height: 45px;
+    top:0;
+    display: inline-block;
+    padding: 5px;
+    cursor:pointer;
+}
+
+/*弹窗底部end*/
+.esri-popup__main-container {
+    outline: none;
+    pointer-events: auto;
+    position: relative;
+    z-index: 1;
+    width: 340px;
+    max-height: 340px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap
+}
+.esri-widget {
+    box-sizing: border-box;
+    color: #323232;
+    font-size: 14px;
+    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.3em;
+    background-color: #fff
+}
+.esri-view-width-xsmall .esri-popup--is-docked-top-center .esri-popup__main-container.esri-popup--is-collapsible:before, .esri-view-width-xsmall .esri-popup--is-docked-bottom-center .esri-popup__main-container.esri-popup--is-collapsible:before {
+    background-color: rgba(110, 110, 110, 0.3);
+    border-radius: 2px;
+    content: "";
+    height: 2px;
+    left: calc(50% - 16px);
+    position: absolute;
+    top: 6px;
+    width: 32px
+}
+
+.esri-popup__header {
+    position: relative;
+    font-size: 12px;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex: 0 0 auto
+}
+
+.esri-popup__header-container {
+    flex: 1
+}
+
+.esri-popup__header-container--button {
+    cursor: pointer
+}
+
+.esri-popup__header-title {
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 6px 7px;
+    margin: 6px auto 6px 7px;
+    display: block;
+    transition: background-color 125ms ease-in-out;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+
+/*endregion */
